@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clash of BaNG</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gallery.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&family=MedievalSharp&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">Clash of BaNG</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="gallery.html" class="active">Gallery</a>
+            <a href="troop.html">Troop</a>
+            <a href="about.html">About</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+
+    <section class="gallery-page">
+        <h1 class="gallery-main-title">THE ARCHIVES OF BANG</h1>
+
+        <p class="gallery-subtitle">
+            Step into the forgotten archives of the abyss.
+            Uncover the legends of our greatest commanders, witness the frontlines where loyal battalions march,
+            and explore the sacred artworks detailing the maps of this endless dark war.
+        </p>
+
+        <section class="gallery-section">
+            <h2 class="gallery-title">The Vanguard Legends</h2>
+
+            <div class="hero-slider">
+                <button class="hero-prev"> ❮ </button>
+
+                <div class="hero-slide-container">
+                    <div class="hero-slide active">
+                        <img src="image/valeria_gallery.webp" class="hero-art valeria-glow">
+
+                        <div class="hero-text">
+                            <h3>VALERIA</h3>
+
+                            <p>
+                                An agile melee fighter slicing enemies with lightning speed.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="hero-slide">
+                        <img src="image/gideon_gallery.jpg" class="hero-art gideon-glow">
+
+                        <div class="hero-text">
+                            <h3>GIDEON</h3>
+
+                            <p>
+                                A backline marksman who provides relentless covering fire
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="hero-slide">
+                        <img src="image/evelynn_gallery.jpg" class="hero-art evelynn-glow">
+
+                        <div class="hero-text">
+                            <h3>EVELYNN</h3>
+
+                            <p>
+                                A midlane mage who channels dark crowd control rifts
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="hero-slide">
+                        <img src="image/ragnar_gallery.jpg" class="hero-art ragnar-glow">
+
+                        <div class="hero-text">
+                            <h3>RAGNAR</h3>
+
+                            <p>
+                                A frontline brawler crushing defenses with his demonic fists
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="hero-next"> ❯ </button>
+            </div>
+
+            <div class="hero-dots">
+                <span class="hero-dot active"></span>
+                <span class="hero-dot"></span>
+                <span class="hero-dot"></span>
+                <span class="hero-dot"></span>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <div class="battlefield-header">
+                <div>
+                    <h2 class="gallery-title">The Battlefield Battalions</h2>
+
+                    <h3 class="battlefield-subtitle" id="troopCategory">
+                        Elixir Corps
+                    </h3>
+                </div>
+
+                <button class="troop-switch-btn"> ➔ </button>
+            </div>
+
+            <div class="troop-gallery">
+                <div class="troop-group active-group">
+
+                    <div class="gallery-card elixir-shadow">
+                        <img src="image/troop1_allain.webp">
+
+                        <div class="gallery-info">
+                            <h3>Allain</h3>
+
+                            <p>
+                                A high-speed duelist shredding armor with true damage blades
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card elixir-shadow">
+                        <img src="image/troop2_xavier.jpg">
+
+                        <div class="gallery-info">
+                            <h3>Xavier</h3>
+
+                            <p>
+                                A fragile mystic mage sniping enemies with light beams
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card elixir-shadow">
+                        <img src="image/troop3_marcel.jpg">
+
+                        <div class="gallery-info">
+                            <h3>Marcel</h3>
+
+                            <p>
+                                A support guardian who manipulates and freezes enemy time
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card elixir-shadow">
+                        <img src="image/troop4_rafaela.jpg">
+
+                        <div class="gallery-info">
+                            <h3>Rafaela</h3>
+
+                            <p>
+                                A backline support healer channeling divine holy light
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card elixir-shadow">
+                        <img src="image/troop5_yu.webp">
+
+                        <div class="gallery-info">
+                            <h3>Consort Yu</h3>
+
+                            <p>
+                                A swift marksman using wind to evade physical strikes
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="troop-group">
+
+                    <div class="gallery-card dark-shadow">
+                        <img src="image/dtroop1_thamuz.jpeg">
+
+                        <div class="gallery-info">
+                            <h3>Thamuz</h3>
+
+                            <p>
+                                An aggressive frontline fighter burning foes with twin scythes
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card dark-shadow">
+                        <img src="image/dtroop2_aatrox.jpeg">
+
+                        <div class="gallery-info">
+                            <h3>Aatrox</h3>
+
+                            <p>
+                                A frontline fighter executing wide, powerful abyssal strikes
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card dark-shadow">
+                        <img src="image/dtroop3_hanzo.jpeg">
+
+                        <div class="gallery-info">
+                            <h3>Hanzo</h3>
+
+                            <p>
+                                A deadly assassin who projects spirits to execute targets
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card dark-shadow">
+                        <img src="image/dtroop4_alice.jpeg">
+
+                        <div class="gallery-info">
+                            <h3>Alice</h3>
+
+                            <p>
+                                A tanky mage who drains enemy life to protect allies.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card dark-shadow">
+                        <img src="image/dtroop5_obsidia.jpeg">
+
+                        <div class="gallery-info">
+                            <h3>Obsidia</h3>
+
+                            <p>
+                                A long-range marksman piercing armor using crystal shards
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <h2 class="gallery-title">Epic Artwork</h2>
+
+            <div class="artwork-wrapper">
+                <button class="art-prev"> ❮ </button>
+
+                <div class="artwork-slider">
+                    <div class="artwork-container">
+
+                        <div class="art-card">
+                            <img src="image/valeria_art.jpg">
+
+                            <div class="art-info">
+                                <h3>Valeria</h3>
+
+                                <p>
+                                    Valeria wields lightning-fast sword strikes with unmatched elegance
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="art-card">
+                            <img src="image/gideon_art.jpg">
+
+                            <div class="art-info">
+                                <h3>Gideon</h3>
+
+                                <p>
+                                    Gideon, stern tactical marksman with powerful stance and sharp gaze
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="art-card">
+                            <img src="image/evelynn_art.jpg">
+
+                            <div class="art-info">
+                                <h3>Evelynn</h3>
+
+                                <p>
+                                    Evelynn, the dark sorceress wielding lightning magic with piercing blue eyes
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="art-card">
+                            <img src="image/ragnar_art.jpg">
+
+                            <div class="art-info">
+                                <h3>Ragnar</h3>
+
+                                <p>
+                                    Ragnar, fierce boxer wielding blazing fists with unstoppable fighting spirit
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="art-card">
+                            <img src="image/allain_art.jpg">
+
+                            <div class="art-info">
+                                <h3>Allain</h3>
+
+                                <p>
+                                    Allain, dual blade warrior excelling in swift lethal combat
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="art-card">
+                            <img src="image/xavier_art.jpg">
+
+                            <div class="art-info">
+                                <h3>Xavier</h3>
+
+                                <p>
+                                    Xavier, radiant celestial mage wielding divine light and sacred power
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="art-card">
+                            <img src="image/marcel_art.jpg">
+
+                            <div class="art-info">
+                                <h3>Marcel</h3>
+
+                                <p>
+                                    Marcel, time stopping support controlling arcane clocks and ancient machinery.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="art-card">
+                            <img src="image/rafaela_art.png">
+
+                            <div class="art-info">
+                                <h3>Rafaela</h3>
+
+                                <p>
+                                    Rafaela, celestial healer radiating grace and divine restoration
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="art-card">
+                            <img src="image/yu_art.jpg">
+
+                            <div class="art-info">
+                                <h3>Consort Yu</h3>
+
+                                <p>
+                                    Consort Yu, graceful archer delivering precise and deadly strikes
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="art-card">
+                            <img src="image/thamuz_art.jpg">
+
+                            <div class="art-info">
+                                <h3>Thamuz</h3>
+
+                                <p>
+                                    Thamuz, lava infused fighter unleashing molten fury in battle
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="art-card">
+                            <img src="image/aatrox_art.jpg">
+
+                            <div class="art-info">
+                                <h3>Aatrox</h3>
+
+                                <p>
+                                    Aatrox, relentless fighter summoning abyssal rifts to devastate enemies
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="art-card">
+                            <img src="image/hanzo_art.jpg">
+
+                            <div class="art-info">
+                                <h3>Hanzo</h3>
+
+                                <p>
+                                    Hanzo, blade-wielding assassin delivering swift and lethal strikes
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="art-card">
+                            <img src="image/alice_art.jpg">
+
+                            <div class="art-info">
+                                <h3>Alice</h3>
+
+                                <p>
+                                    Alice, blood-draining tank mage sustaining herself through enemies
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="art-card">
+                            <img src="image/obsidia_art.jpg">
+
+                            <div class="art-info">
+                                <h3>Obsidia</h3>
+
+                                <p>
+                                    Obsidia, shard-forged marksman raining crystalline death from distance
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="art-next"> ❯ </button>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <h2 class="gallery-title">Mythical Battlegrounds</h2>
+
+            <div class="map-container">
+
+                <div class="map-card">
+                    <img src="image/new_map.jpg">
+
+                    <div class="map-info">
+                        <h3>The Fallen Chamber</h3>
+
+                        <p>
+                            Survive the darkness of a ruined glorious throne room
+                        </p>
+                    </div>
+                </div>
+
+                <div class="map-card">
+                    <img src="image/map1_gallery.jpg">
+
+                    <div class="map-info">
+                        <h3>The Shattered Bastion</h3>
+
+                        <p>
+                            Deploy troops to conquer a war-torn ancient mountain fortress
+                        </p>
+                    </div>
+                </div>
+
+                <div class="map-card">
+                    <img src="image/map2_gallery.jpg">
+
+                    <div class="map-info">
+                        <h3>The Whispering Hollow</h3>
+
+                        <p>
+                            Uncover dark secrets hidden within a mystical shadowed forest
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <footer>
+        <div class="footer-left">
+            <h2>Clash of BaNG</h2>
+            
+            <p>Rise, Battle, Dominate</p>
+        </div>
+
+        <div class="footer-middle">
+            <h4>Regional Hubs</h4>
+
+            <p>Jakarta, Indonesia</p>
+            <p>Bandung, Indonesia</p>
+            <p>Sanur, Indonesia</p>
+        </div>
+
+        <div class="footer-middle">
+            <h4>Quick Links</h4>
+
+            <a href="troop.html">Troops Guide</a>
+            <a href="about.html">About Us</a>
+            <a href="register.html">Join Community</a>
+        </div>
+
+        <div class="footer-right">
+            <h4>Join Us On</h4>
+
+            <div class="social-item">
+                <img src="image/instagram.png" alt="Instagram Logo" class="social-icon">
+                <span>Instagram</span>
+            </div>
+            <div class="social-item">
+                <img src="image/youtube.png" alt="YouTube Logo" class="social-icon">
+                <span>Youtube</span>
+            </div>
+            <div class="social-item">
+                <img src="image/discord.png" alt="Discord Logo" class="social-icon">
+                <span>Discord</span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        © 2025 Clash of BaNG Community. All rights reserved. Established 2018.
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

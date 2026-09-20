@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clash of BaNG - Register</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="register.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&family=MedievalSharp&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">Clash of BaNG</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="troop.html">Troop</a>
+            <a href="about.html">About</a>
+            <a href="register.html" class="active">Register</a>
+        </nav>
+    </header>
+
+    <section class="register-page">
+        <div class="register-overlay"></div>
+
+        <div class="register-box">
+            <h1 class="register-title">LEGACY OF THE DARK ELIXIR</h1>
+
+            <p class="register-subtitle">
+                Forge your destiny in the fires of battle. <br>
+                Join the elite ranks and command the dark elixir.
+            </p>
+
+            <div class="register-line"></div>
+            <form id="registerForm">
+
+                <div class="register-grid">
+
+                    <div class="input-group">
+                        <label>Warrior Name</label>
+                        <input type="text" id="username" placeholder="Enter Your Name...">
+                        <small class="error"></small>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Crystal Mail (Email)</label>
+                        <input type="text" id="email" placeholder="example@domain.com">
+                        <small class="error"></small>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Warrior Age</label>
+                        <input type="number" id="age" placeholder="Enter Your Age...">
+                        <small class="error"></small>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Gender</label>
+                        <div class="gender-box">
+                            <button type="button" class="gender-btn" data-gender="Male"> Male </button>
+                            <button type="button" class="gender-btn" data-gender="Female"> Female </button>
+                            <button type="button" class="gender-btn" data-gender="Other"> Other </button>
+                        </div>
+                        <small class="error"></small>
+                    </div>
+                </div>
+
+                <div class="input-group full-width">
+                    <label>Favorite Vanguard or Battalions</label>
+                    <select id="favorite">
+                        <option value="">Select Your Favorites</option>
+
+                        <option>Valeria</option>
+                        <option>Gideon</option>
+                        <option>Evelynn</option>
+                        <option>Ragnar</option>
+
+                        <option>Allain</option>
+                        <option>Xavier</option>
+                        <option>Marcel</option>
+                        <option>Rafaela</option>
+                        <option>Consort Yu</option>
+
+                        <option>Thamuz</option>
+                        <option>Aatrox</option>
+                        <option>Hanzo</option>
+                        <option>Alice</option>
+                        <option>Obsidia</option>
+                    </select>
+                    <small class="error"></small>
+                </div>
+
+                <div class="input-group full-width">
+                    <label>Reason to Join the Vanguard</label>
+                    <textarea id="reason" placeholder="Why do you seek to join the Clash of BaNG?"></textarea>
+                    <small class="error"></small>
+                </div>
+
+                <button type="submit" class="register-btn"> REGISTER FOR GLORY </button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-left">
+            <h2>Clash of BaNG</h2>
+            
+            <p>Rise, Battle, Dominate</p>
+        </div>
+
+        <div class="footer-middle">
+            <h4>Regional Hubs</h4>
+
+            <p>Jakarta, Indonesia</p>
+            <p>Bandung, Indonesia</p>
+            <p>Sanur, Indonesia</p>
+        </div>
+
+        <div class="footer-middle">
+            <h4>Quick Links</h4>
+
+            <a href="troop.html">Troops Guide</a>
+            <a href="about.html">About Us</a>
+            <a href="register.html">Join Community</a>
+        </div>
+
+        <div class="footer-right">
+            <h4>Join Us On</h4>
+
+            <div class="social-item">
+                <img src="image/instagram.png" alt="Instagram Logo" class="social-icon">
+                <span>Instagram</span>
+            </div>
+            <div class="social-item">
+                <img src="image/youtube.png" alt="YouTube Logo" class="social-icon">
+                <span>Youtube</span>
+            </div>
+            <div class="social-item">
+                <img src="image/discord.png" alt="Discord Logo" class="social-icon">
+                <span>Discord</span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        © 2025 Clash of BaNG Community. All rights reserved. Established 2018.
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
