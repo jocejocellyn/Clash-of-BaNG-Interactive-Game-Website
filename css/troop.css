@@ -1,0 +1,390 @@
+.troop-page{
+    padding: 120px 60px 80px;
+}
+
+.troop-title{
+    text-align: center;
+    font-size: 55px;
+    color: #ddb4ff;
+    font-family: 'MedievalSharp', cursive;
+    margin-bottom: 60px;
+}
+
+.second-title{
+    margin-top: 90px;
+}
+
+.hero-container{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.hero-card{
+    width: 220px;
+    position: relative;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.hero-card img{
+    height: 380px;
+    object-fit: contain;
+    transition: 0.4s;
+    display: block;
+    margin: 0 auto;
+}
+
+.hero-card h2{
+    margin-top: 28px;
+    font-size: 38px;
+    font-family: 'MedievalSharp', cursive;
+}
+
+.hero-detail{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 260px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+    z-index: 20;
+    overflow: hidden;
+    border: 2px solid #b96dff;
+    box-shadow: 0 0 30px #9c4dff;
+}
+
+.detail-bg{
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.valeria .detail-bg {
+    background-image: url('image/bg_valeria.png'); 
+}
+
+.gideon .detail-bg {
+    background-image: url('image/bg_gideon.png');  
+}
+
+.evelynn .detail-bg {
+    background-image: url('image/bg_evelynn.png'); 
+}
+
+.ragnar .detail-bg {
+    background-image: url('image/bg_ragnar.png');  
+}
+
+.hero-detail h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: 'MedievalSharp', cursive;
+}
+
+.hero-detail p{
+    font-size: 12px;
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+.stats{
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    margin-bottom: 15px;
+}
+
+.stats p{
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.hero-detail span{
+    display: block;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.hero-detail strong{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.hero-detail small{
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.hero-card:hover .hero-detail{
+    opacity: 1;
+    visibility: visible;
+}
+
+.hero-card:hover{
+    transform: translateY(-10px);
+}
+
+.hero-card:hover img{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.valeria:hover .hero-detail {
+    border-color: #9BD9FF;
+    box-shadow: 0 0 30px #9BD9FF;
+}
+
+.gideon:hover .hero-detail {
+    border-color: #C8C8C8;
+    box-shadow: 0 0 30px #C8C8C8;
+}
+
+.evelynn:hover .hero-detail {
+    border-color: #D7A8FF;
+    box-shadow: 0 0 30px #D7A8FF;
+}
+
+.ragnar:hover .hero-detail {
+    border-color: #7F0000;
+    box-shadow: 0 0 30px #7F0000;
+}
+
+.troops-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+}
+
+.troop-box{
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    transition: 0.4s;
+}
+
+.troop-box img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.troop-preview{
+    position: absolute;
+    left: 25px;
+    bottom: 20px;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: 0.4s;
+}
+
+.troop-preview h3{
+    font-size: 34px;
+    font-family: 'MedievalSharp', cursive;
+    color: white;
+    text-shadow: 0 0 15px black;
+}
+
+.elixir-tag,
+.dark-tag{
+    width: fit-content;
+
+    padding: 8px 16px;
+    border-radius: 30px;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    backdrop-filter: blur(5px);
+}
+
+.elixir-tag{
+    background: rgba(20,20,35,0.8);
+    border: 1px solid #d9b1ff;
+    color: #fff;
+}
+
+.dark-tag{
+    background: rgba(0,0,0,0.4);
+    border: 1px solid #ff5f8f;
+    color: #ffd4df;
+}
+
+.troop-box:hover .troop-preview{
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+.troop-overlay{
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    backdrop-filter: blur(3px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 25px;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.troop-overlay::before{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 36%;
+    background: rgba(40,40,40,0.55);
+    border-radius: 20px;
+    bottom: 15px;
+    left: 25px;
+    z-index: -1;
+}
+
+.troop-overlay h3{
+    font-size: 30px;
+    font-family: 'MedievalSharp', cursive;
+    margin-bottom: 10px;
+}
+
+.troop-overlay p{
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.troop-stats{
+    display: grid;
+    grid-template-rows: repeat(2,auto);
+    grid-auto-flow: column;
+    gap: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.troop-stats span{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.troop-overlay strong{
+    font-size: 13px;
+    margin-left: 7px;
+}
+
+.troop-box:hover .troop-overlay{
+    opacity: 1;
+}
+
+.troop-box:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px #cb77ff;
+}
+
+@media screen and (max-width: 768px){
+    .troop-page{
+        padding: 120px 20px 70px;
+    }
+
+    .troop-title{
+        font-size: 40px;
+    }
+
+    .hero-container{
+        gap: 30px;
+    }
+
+    .hero-card{
+        width: calc(50% - 15px);
+    }
+
+    .hero-card img{
+        height: 300px;
+    }
+
+    .hero-card h2{
+        font-size: 30px;
+    }
+
+    .hero-detail{
+        width: 100%;
+        height: 320px;
+        padding: 15px;
+    }
+
+    .hero-detail h3{
+        font-size: 20px;
+    }
+
+    .hero-detail p{
+        font-size: 11px;
+    }
+
+    .stats p{
+        font-size: 12px;
+    }
+
+    .hero-detail span{
+        font-size: 11px;
+    }
+
+    .hero-detail strong{
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+
+    .hero-detail small{
+        font-size: 11px;
+    }
+
+    .troops-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .troop-box img{
+        height: 220px;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    .troop-preview h3{
+        font-size: 26px;
+    }
+
+    .troop-overlay{
+        padding: 18px;
+    }
+
+    .troop-overlay h3{
+        font-size: 22px;
+    }
+
+    .troop-overlay p{
+        font-size: 12px;
+    }
+
+    .troop-overlay::before{
+        left: 15px;
+    }
+
+    .troop-stats{
+        grid-template-rows: repeat(2,auto);
+        grid-auto-flow: column;
+    }
+}

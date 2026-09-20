@@ -1,0 +1,388 @@
+.hero{
+    height: 600px;
+    background: url('image/home-page.webp') center/cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+}
+
+.hero-content{
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1{
+    font-size: 80px;
+    margin-bottom: 20px;
+    font-family: 'MedievalSharp', cursive;
+}
+
+.hero-content p{
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+.latest-update{
+    padding: 70px 80px;
+}
+
+.latest-update h2{
+    text-align: center;
+    font-size: 60px;
+    color: #ddb4ff;
+    margin-bottom: 40px;
+    font-family: 'MedievalSharp', cursive;
+}
+
+.carousel{
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.slides{
+    position: relative;
+    overflow: hidden;
+    border-radius: 35px;
+}
+
+.slide{
+    display: none;
+    position: relative;
+}
+
+.slide.active{
+    display: block;
+}
+
+.slide img{
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 35px;
+    opacity: 0.5;
+}
+
+.slide-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    transition: opacity 0.3s ease;
+    width: 90%;
+}
+
+.slide-text h3{
+    font-size: 40px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+}
+
+.slide-text h3 .content-title {
+    font-family: 'MedievalSharp', cursive; 
+    font-weight: bold; 
+    color: #E4DBFF; 
+}
+
+.slide-text p{
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
+}
+
+.slide.show-detail .slide-text {
+    display: none; 
+}
+
+.detail-popup{
+    position: absolute;
+    width: 80%;
+    height: 70%;
+    background: rgba(13, 10, 26, 0.65);
+    padding: 45px;
+    border-radius: 25px; 
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.6;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    animation: fadeInPopup 0.3s ease-out forwards;
+}
+
+.slide.show-detail .detail-popup{
+    display: block;
+}
+
+@keyframes fadeInPopup {
+    from { 
+        opacity: 0; 
+        top: 60%; 
+        left: 50%;
+        transform: translate(-50%, -50%); 
+    }
+    to { 
+        opacity: 1; 
+        top: 50%; 
+        left: 50%;
+        transform: translate(-50%, -50%); 
+    }
+}
+
+.prev,
+.next{
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev{
+    left: 10px;
+}
+
+.next{
+    right: 10px;
+}
+
+.dots{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dot{
+    width: 15px;
+    height: 15px;
+    background: white;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 5px;
+    opacity: 0.5;
+}
+
+.dot.active{
+    opacity: 1;
+}
+
+.about{
+    display: flex;
+    gap: 40px;
+    padding: 40px 80px;
+    align-items: center;
+}
+
+.about-image img{
+    width: 500px;
+    border-radius: 10px;
+}
+
+.about-content{
+    background: #5b2675;
+    padding: 35px;
+    border-radius: 10px;
+}
+
+.about-content h2{
+    margin-bottom: 20px;
+    font-family: 'MedievalSharp', cursive;
+}
+
+.about-content p{
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.community-btn{
+    text-decoration: none;
+    color: #f2d7ff;
+}
+
+.featured{
+    padding: 70px 80px;
+}
+
+.featured-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.featured-header h2{
+    font-size: 55px;
+    font-family: 'MedievalSharp', cursive;
+    color: #ddb4ff;
+}
+
+.featured-header p{
+    margin-top: 10px;
+}
+
+.view-all{
+    color: #f2d7ff;
+    text-decoration: none;
+    font-size: 35px;
+    margin-top: 50px;
+}
+
+.troop-container{
+    display: flex;
+    gap: 35px;
+}
+
+.troop-card{
+    position: relative;
+    background: #4c0d72;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.troop-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px #cb77ff;
+    border: 3px solid #cb77ff;
+}
+
+.large{
+    width: 50%;
+}
+
+.small{
+    width: 25%;
+}
+
+.troop-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.troop-info{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 18px;
+    background: linear-gradient(
+        to top,
+        rgba(55, 0, 92, 0.95),
+        rgba(55, 0, 92, 0.7),
+        transparent
+    );
+}
+
+.troop-info h3{
+    font-size: 40px;
+    font-family: 'MedievalSharp', cursive;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+.troop-info p{
+    margin-top: 8px;
+    color: #e8d7ff;
+    line-height: 1.4;
+    font-size: 15px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+}
+
+@media screen and (max-width: 768px){
+    .hero{
+        height: 300px;
+        padding: 0 20px;
+    }
+
+    .hero-content h1{
+        margin-top: 100px;
+        font-size: 48px;
+    }
+
+    .hero-content p{
+        font-size: 16px;
+    }
+
+    .latest-update,
+    .featured{
+        padding: 50px 20px;
+    }
+
+    .latest-update h2,
+    .featured-header h2{
+        font-size: 40px;
+    }
+
+    .slide img{
+        height: 250px;
+    }
+
+    .slide-text h3{
+        font-size: 36px;
+    }
+
+    .detail-popup{
+        width: 80%;
+        padding: 35px;
+        font-size: 13px;
+    }
+
+    .about{
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .about-image img{
+        width: 100%;
+    }
+
+    .featured-header{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .view-all{
+        font-size: 24px;
+        margin-top: 0;
+    }
+
+    .troop-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .large,
+    .small{
+        width: 70%;
+        height: 300px;
+    }
+
+    .troop-card img{
+        object-fit: cover;
+        object-position: top;
+    }
+
+    .troop-info h3{
+        font-size: 28px;
+    }
+}

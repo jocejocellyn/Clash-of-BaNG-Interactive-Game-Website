@@ -1,0 +1,201 @@
+.register-page{
+    min-height: 100vh;
+    background:
+    linear-gradient(rgba(12,0,30,0.7),
+    rgba(12,0,30,0.7)),
+    url('image/register-page.png') center/cover no-repeat;
+    padding: 130px 20px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-box{
+    width: 760px;
+    background: rgba(48,17,83,0.78);
+    border: 2px solid #CFA9FF;
+    box-shadow:
+    0 0 25px rgba(202,153,255,0.7),
+    0 0 60px rgba(140,71,255,0.4);
+    border-radius: 18px;
+    padding: 45px 55px;
+}
+
+.register-title{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'MedievalSharp', cursive;
+    color: #ddb4ff;
+}
+
+.register-subtitle{
+    width: 85%;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 1.6;
+    color: #D9C4F7;
+    font-size: 16px;
+    margin: 5px auto 5px;
+}
+
+.register-line{
+    width: 80%;
+    height: 1px;
+    background: #CDAEFF;
+    margin: 10px auto 35px;
+}
+
+.register-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label{
+    margin-bottom: 10px;
+    color: #E8D8FF;
+    font-size: 15px;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea{
+    background: #170430;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    border-radius: 6px;
+    font-family: 'Cinzel', serif;
+}
+
+.input-group input::placeholder,
+.input-group textarea::placeholder{
+    color: #A99BC0;
+}
+
+.input-group textarea{
+    min-height: 170px;
+    resize: none;
+    line-height: 1.6;
+}
+
+.full-width{
+    margin-top: 28px;
+}
+
+.gender-box{
+    display: flex;
+}
+
+.gender-btn{
+    flex: 1;
+    background: #170430;
+    border: none;
+    color: #D9C4F7;
+    padding: 14px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gender-btn:first-child{
+    border-radius: 6px 0 0 6px;
+}
+
+.gender-btn:last-child{
+    border-radius: 0 6px 6px 0;
+}
+
+.gender-btn.active-gender{
+    background: #9E71F0;
+    color: white;
+}
+
+select{
+    cursor: pointer;
+}
+
+select option{
+    background: #170430;
+    color: white;
+}
+
+.register-btn{
+    width: 100%;
+    margin-top: 40px;
+    padding: 18px;
+    border: none;
+    border-radius: 12px;
+    background: #D8C4FF;
+    color: #201940;
+    font-size: 33px;
+    font-family: 'MedievalSharp', cursive;
+    cursor: pointer;
+    border: 2px solid #A77BFF;
+    box-shadow:
+    0 0 15px rgba(167,123,255,0.8),
+    0 0 35px rgba(167,123,255,0.5);
+    transition: 0.3s;
+}
+
+.register-btn:hover{
+    transform: translateY(-4px);
+}
+
+.error{
+    color: #ff8b8b;
+    margin-top: 8px;
+    font-size: 13px;
+    min-height: 18px;
+}
+
+.input-error{
+    border: 2px solid #ff6b6b !important;
+}
+
+@media screen and (max-width: 768px){
+    .register-page{
+        padding: 120px 15px 60px;
+    }
+
+    .register-box{
+        width: 100%;
+        padding: 35px 20px;
+    }
+
+    .register-title{
+        font-size: 38px;
+    }
+
+    .register-subtitle{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .register-grid{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .gender-box{
+        flex-direction: column;
+    }
+
+    .gender-btn:first-child{
+        border-radius: 6px 6px 0 0;
+    }
+
+    .gender-btn:last-child{
+        border-radius: 0 0 6px 6px;
+    }
+
+    .register-btn{
+        font-size: 26px;
+        padding: 16px;
+    }
+}
